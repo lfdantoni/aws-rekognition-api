@@ -1,7 +1,6 @@
 connexion == 1.1.15
 python_dateutil == 2.6.0
 setuptools >= 21.0.0
-swagger-server >= 1.0.0
 typing == 3.6.4
 urllib3 == 1.22
 vboxapi == 1.0
