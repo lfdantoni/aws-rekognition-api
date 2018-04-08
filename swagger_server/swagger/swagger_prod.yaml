@@ -41,10 +41,15 @@ paths:
       produces:
       - "application/json"
       parameters:
+      - name: "file"
+        in: "formData"
+        description: "file to upload"
+        required: true
+        type: "file"
       - name: "userId"
         in: "formData"
         description: "ID of user to update"
-        required: true
+        required: false
         type: "integer"
         format: "int64"
       - name: "additionalMetadata"
@@ -52,11 +57,6 @@ paths:
         description: "Additional data to pass to server"
         required: false
         type: "string"
-      - name: "file"
-        in: "formData"
-        description: "file to upload"
-        required: false
-        type: "file"
       responses:
         200:
           description: "successful operation"
