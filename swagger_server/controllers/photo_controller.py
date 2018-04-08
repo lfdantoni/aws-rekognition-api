@@ -25,7 +25,7 @@ def upload_file(userId, additionalMetadata=None, file=None):  # noqa: E501
     for bucket in s3.buckets.all():
         lis.append(bucket.name)
     
-    client = boto3.client('rekognition')
+    client = boto3.client('rekognition', region_name='us-west-2')
     response = client.detect_faces(
         Image={
             # 'Bytes': b'bytes',
