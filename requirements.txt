@@ -2,6 +2,6 @@ connexion == 1.1.15
 python_dateutil == 2.6.0
 setuptools >= 21.0.0
 urllib3 == 1.22
-Werkzeug == 0.14.1
+Werkzeug == 0.15.3
 zope.interface ==4.1.1
 boto3 == 1.7.2
